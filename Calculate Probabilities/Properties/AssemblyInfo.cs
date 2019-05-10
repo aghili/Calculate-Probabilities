@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("Calculate Probabilities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("aghili.mostafa@gmail.com")]
 [assembly: AssemblyProduct("Calculate Probabilities")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("aghili.mostafa@gmail.com  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.9.0.0")]
+[assembly: AssemblyFileVersion("0.9.0.0")]
