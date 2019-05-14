@@ -21,6 +21,8 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <ToolBar Grid.Column="1" Height="32" Grid.Row="1" VerticalAlignment="Top" Header="">
+            <Button Content="Custom1" Height="27" VerticalAlignment="Top" Width="auto" Click="Button_Click"/>
+            <Button Content="Custom2" Height="27" VerticalAlignment="Top" Width="auto" Click="Button_Click"/>
             <Button Content="10x3" Height="27" VerticalAlignment="Top" Width="auto" Click="Button_Click"/>
             <Button Content="10x10" Height="27" VerticalAlignment="Top" Width="auto" Click="Button_Click"/>
             <Button Content="3x10" Height="27" VerticalAlignment="Top" Width="auto" Click="Button_Click"/>
@@ -31,7 +33,22 @@
         <RichTextBox Name="RtbSets" Grid.Column="1" Grid.Row="2">
             <FlowDocument>
                 <Paragraph>
-                    <Run Text="RichTextBox"/>
+                    <Run Text="A,X,B"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="C,X,D"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="E,X,F"/>
+                </Paragraph>
+ <Paragraph>
+                    <Run Text="G,X,H"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="I,X,J"/>
+                </Paragraph>
+ <Paragraph>
+                    <Run Text="K,X,L"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>

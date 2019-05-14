@@ -36,7 +36,46 @@ namespace Calculate_Probabilities
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var btn = sender as Button;
-            sets = new ProbabilitiesSets(btn.Content.ToString());
+            switch (btn.Content.ToString().ToLower())
+            {
+                case "custom1":
+                    sets = new ProbabilitiesSets()
+                    {
+                        Sets = new List<SetMembers>()
+                        {
+                            new SetMembers{Members = new List<string>{"A","X","B"}},
+                            new SetMembers{Members = new List<string>{"C","X","D"}},
+                            new SetMembers{Members = new List<string>{"E","X","F"}},
+                            new SetMembers{Members = new List<string>{"G","X","H"}},
+                            new SetMembers{Members = new List<string>{"I","X","J"}},
+                            new SetMembers{Members = new List<string>{"K","X","L"}}
+                        }
+                    };
+                    break;
+                case "custom2":
+                    sets = new ProbabilitiesSets()
+                    {
+                        Sets = new List<SetMembers>()
+                        {
+                            new SetMembers{Members = new List<string>{"A","X","B"}},
+                            new SetMembers{Members = new List<string>{"C","X","D"}},
+                            new SetMembers{Members = new List<string>{"E","X","F"}},
+                            new SetMembers{Members = new List<string>{"G","X","H"}},
+                            new SetMembers{Members = new List<string>{"I","X","J"}},
+                            new SetMembers{Members = new List<string>{"K","X","L"}},
+                            new SetMembers{Members = new List<string>{"M","X","N"}},
+                            new SetMembers{Members = new List<string>{"O","X","P"}},
+                            new SetMembers{Members = new List<string>{"Q","X","R"}},
+                            new SetMembers{Members = new List<string>{"S","X","T"}},
+                            new SetMembers{Members = new List<string>{"U","X","V"}},
+                            new SetMembers{Members = new List<string>{"Y","X","Z"}}
+                        }
+                    };
+                    break;
+                default:
+                    sets = new ProbabilitiesSets(btn.Content.ToString());
+                    break;
+            }
             sets.ProgressChanged += BgwAlgorithm_ProgressChanged;
             sets.RunWorkerCompleted += Sets_RunWorkerCompleted;
             FlowDocument fd = new FlowDocument();
